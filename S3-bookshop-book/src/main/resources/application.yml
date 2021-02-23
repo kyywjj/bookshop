@@ -1,0 +1,21 @@
+server:
+   port: 8001
+   
+# 定义当前服务名
+spring:
+   application:
+      name: bsbook
+   datasource:
+      url: jdbc:mysql://127.0.0.1/bookshop?serverTimezone=UTC&CharacterEncoding=UTF-8&useSSL=false
+      username: root
+      password: a
+      driver-class-name: com.mysql.jdbc.Driver
+
+logging:
+   level:
+      com.yc.bookshop.dao: debug
+      
+mybatis:
+   configuration:
+      mapUnderscoreToCamelCase: true
+      com.yc.bookshop.dao: debug
